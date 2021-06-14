@@ -9,9 +9,9 @@ var userForm= document.getElementById('myForm');
 function focusField () {
     userForm.style.backgroundColor= "blue";  
 }
-userForm.addEventListener('focus', focusField);
+userForm.addEventListener('focus', focusField, true);
 
 function nameBlurFunction () {
     alert("Please fill out form");
 }
-userForm.addEventListener('blur', nameBlurFunction);
+userForm.addEventListener('blur', nameBlurFunction, true);
